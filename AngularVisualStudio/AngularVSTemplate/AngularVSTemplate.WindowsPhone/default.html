@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app ng-csp>
+<head>
+    <meta charset="utf-8" />
+    <title>AngularVSTemplate.WindowsPhone</title>
+
+    <!-- WinJS references (remove if not using WinJS) -->
+    <!-- At runtime, ui-themed.css resolves to ui-themed.light.css or ui-themed.dark.css
+    based on the user’s theme setting. This is part of the MRT resource loading functionality. -->
+    <link href="/css/ui-themed.css" rel="stylesheet" />
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+
+    <!-- AngularVSTemplate.Phone references -->
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/default.js"></script>
+    <link href="/css/default.css" rel="stylesheet" />
+</head>
+<body class="phone">
+    <!-- sample interaction, remove with your own content -->
+    <input type="text" ng-model="enteredText" />
+    <hr />
+    <p>{{ enteredText }}</p>
+</body>
+</html>
